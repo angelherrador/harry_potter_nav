@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/character.dart';
+import '../widgets/rating.dart';
 
 class CharacterDetail extends StatelessWidget {
   const CharacterDetail({super.key, required this.character});
@@ -43,14 +44,7 @@ class CharacterDetail extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Row(
-                  children: [
-                    for (int i = 1; i <= 5; i++)
-                      (character.stars >= i)
-                          ? const Icon(Icons.star)
-                          : const Icon(Icons.star_border_sharp),
-                  ],
-                ),
+                Rating(value: character.stars),
                 Text("${character.reviews} reviews"),
               ],
             ),
@@ -86,3 +80,5 @@ class CharacterDetail extends StatelessWidget {
     );
   }
 }
+
+
