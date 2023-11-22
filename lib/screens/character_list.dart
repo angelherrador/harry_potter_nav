@@ -51,7 +51,6 @@ class CharacterList extends StatelessWidget {
         backgroundColor: Colors.purple,
         title: const Text(
           'Welcome to The Jungle',
-          style: TextStyle(color: Colors.white),
         ),
       ),
       body: ListView(

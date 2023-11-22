@@ -14,9 +14,9 @@ class CharacterDetail extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purple.shade200,
+        backgroundColor: Colors.purple,
         title:
-            Text(character.name, style: const TextStyle(color: Colors.white)),
+            Text(character.name,),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
