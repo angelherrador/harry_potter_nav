@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../models/character.dart';
-
 class Rating extends StatelessWidget {
   const Rating({
     super.key,

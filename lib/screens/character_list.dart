@@ -33,7 +33,7 @@ class CharacterList extends StatelessWidget {
         strength: 4,
         speed: 2,
         magic: 3),
-    /*Character(
+    Character(
         name: "Evita PadLock",
         url:
             "https://www.modelmanagement.com/blog/wp-content/uploads/2020/11/evaP.jpg",
@@ -41,7 +41,7 @@ class CharacterList extends StatelessWidget {
         reviews: 1000,
         strength: 10,
         speed: 10,
-        magic: 10),*/
+        magic: 10),
   ];
 
   @override
@@ -50,7 +50,7 @@ class CharacterList extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.purple,
         title: const Text(
-          'Welcome to The Jungle',
+          'Welcome To The Jungle',
         ),
       ),
       body: ListView(
