@@ -16,7 +16,7 @@ class Rating extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         for (int i = 1; i <= 5; i++)
-          GestureDetector(
+          InkWell(
               onTap: () {
                 if (onStarClicked != null) onStarClicked!(i);
               },
