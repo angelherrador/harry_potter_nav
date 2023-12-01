@@ -53,4 +53,19 @@ class HogwartsData extends ChangeNotifier{
     getCharacter(id).favorite =! getCharacter(id).favorite;
     notifyListeners();
   }
+
+  void addStrength(Character character, int value) {
+    character.addStrength(value);
+    notifyListeners();
+  }
+
+  void addMagic(Character character, int value) {
+    character.addMagic(value);
+    notifyListeners();
+  }
+
+  void addSpeed(Character character, int value) {
+    character.addSpeed(value);
+    notifyListeners();
+  }
 }

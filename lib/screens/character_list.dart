@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/character.dart';
@@ -5,7 +6,7 @@ import '../providers/hogwarts_data.dart';
 import 'character_detail.dart';
 
 class CharacterList extends StatelessWidget {
-  const CharacterList({super.key});
+   const CharacterList({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +36,7 @@ class CharacterList extends StatelessWidget {
                       tag: character.name,
                       child: Image.network(character.url),
                     ),
-                    title: Text(character.name),
+                    title: Text('${character.id} - ${character.name}'),
                     subtitle: Text('${character.reviews} reviews'),
                     trailing: Icon(
                       (character.favorite)

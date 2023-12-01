@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
             foregroundColor: Colors.white,
           ),
         ),
-        home: CharacterList(),
+        home: const CharacterList(),
       ),
     );
   }

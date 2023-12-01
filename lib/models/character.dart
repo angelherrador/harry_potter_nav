@@ -26,5 +26,16 @@ class Character {
     totalStars += value;
   }
 
+  void addStrength(int value){
+    strength++;
+  }
+
+  void addMagic(int value){
+    magic++;
+  }
+  void addSpeed(int value){
+    speed++;
+  }
+
 }
 
