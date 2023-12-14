@@ -5,16 +5,21 @@ import '../models/character.dart';
 import '../providers/hogwarts_data.dart';
 import 'character_detail.dart';
 
-class CharacterList extends StatelessWidget {
+class CharacterList extends StatefulWidget {
    const CharacterList({super.key});
 
+  @override
+  State<CharacterList> createState() => _CharacterListState();
+}
+
+class _CharacterListState extends State<CharacterList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.purple,
         title: const Text(
-          "Welcome to Hogwarts",
+          "Welcome To Hogwarts",
         ),
       ),
       body: Consumer<HogwartsData>(builder: (context, data, child) {

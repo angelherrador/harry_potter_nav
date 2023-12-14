@@ -14,20 +14,22 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (BuildContext context) => HogwartsData(),
-      child: MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          fontFamily: GoogleFonts.montserrat().fontFamily,
-          useMaterial3: true,
-          appBarTheme: const AppBarTheme(
-            foregroundColor: Colors.white,
+    return MultiProvider(
+      providers: [
+      ChangeNotifierProvider(create: (BuildContext context) => HogwartsData()),
+      ],
+        child: MaterialApp(
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            fontFamily: GoogleFonts.montserrat().fontFamily,
+            useMaterial3: true,
+            appBarTheme: const AppBarTheme(
+              foregroundColor: Colors.white,
+            ),
           ),
+          home: const CharacterList(),
         ),
-        home: const CharacterList(),
-      ),
-    );
+      );
   }
 }
